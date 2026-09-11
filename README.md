@@ -7,29 +7,28 @@
 
 ## Installation
 1. Download the [mod archive](https://github.com/shomped/wttg3-gjm/releases/tag/v1.0.0)
-2. Extract the archive to wherever you want
-3. Copy the contents of `guaranteedJackpot`(`ue4ss` and `dwmapi.dll`) and paste them into `\Welcome to the Game III\WTTGSD\Binaries\Win64\`
-4. The mod works **automatically**. If you're not sure if it does, just press F2 in-game to force its activation manually.
-5. Play the game and enjoy your guaranteed jackpots!
+2. Extract the files.
+3. Copy the contents of `guaranteedJackpot` folder (which include the `ue4ss` folder and the `dwmapi.dll`) and paste them into your game directory at `\Welcome to the Game III\WTTGSD\Binaries\Win64\`
+4. Launch the game and open Merramun app. The mod should run automatically, but you can press F2 to manually force its activation if it stops working.
+5. You will now hit the x1000 jackpot each time you spin. 
+5.1 If for some reason you didn't hit the jackpot, keep spinning while pressing F2 before each spin. I recommend betting 1 YoLoYen to minimize risk.
 
 ## Troubleshooting
-**This is a fun work, so troubles may occur at any point.**
+**This is a hobby project, so you may face some issues. To resolve them, try this:**
 
-If the mod stops working at any point(including in-game computer power outages/hacks), you should try forcing its activation by pressing F2 before each spin.
-
-If the mod stops working after you've died, go to the main menu and load back into the game.
-
-If it doesn't help, restart the game. 
-
-If the mod doesn't work at all from the first launch, check the game version and the location of your files. Try debugging (more about it down below)
+1. **Press F2:** If the mod stops working at any point (including after in-game computer power outages or hacks), force its activation by pressing **F2** before each spin.
+2. **Reload your save:** If the mod stops working after you die, go back to the main menu and load back into the game.
+3. **Restart the game:** If reloading doesn't help, completely restart the game.
+4. **Check files and version:** If the mod doesn't work at all from the first launch, verify your game version and file locations.
+5. **Try debugging:** If none of the steps above work, follow the debugging guide below.
 
 ## Debugging
 
-To try and debug it, go to the `ue4ss` folder, open `UE4SS-settings.ini`, find [Debug] and set `ConsoleEnabled`,`GuiConsoleEnabled` and `GuiConsoleVisible` to 1.
-Then, open the game again and wait for the game to load. Wait for `Starting Lua mod 'GuaranteedJackpot'` and see if there are any errors. 
+To try and debug it, go to the `ue4ss` folder, open `UE4SS-settings.ini`, find [Debug] and set `ConsoleEnabled`, `GuiConsoleEnabled` and `GuiConsoleVisible` to 1.
+Then, open the game again and wait for the game to load. Wait for the `Starting Lua mod 'GuaranteedJackpot'` line and see if there are any errors. 
 
-If it's a mod problem, leave an issue and paste that error.
+If there are lua scripting errors, create an issue, copy and paste the error text.
 
 ### Credits
-* This mod uses [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). 
+* This mod uses [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). UE4SS is a very helpful tool.
 * The full license text for UE4SS can be found in the included `LICENSE` file within the UE4SS directory.
